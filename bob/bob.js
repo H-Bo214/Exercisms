@@ -8,11 +8,15 @@
 // 'Calm down, I know what I'm doing!' if you yell a question ?!
 // 'Fine. Be that way!'  if you address w/o saying anything
 // 'Whatever.' to anything else
+
 export const hey = (message) => {
   if (message === message.toUpperCase()) {
     return 'Whoa, chill out!'
   } 
   else if (message.includes('?')) {
     return 'Sure.'
+  }
+  else if (message.includes('!')) {
+    return 'Whatever.'
   }
 };
