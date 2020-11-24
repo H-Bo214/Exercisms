@@ -9,7 +9,10 @@
 // 'Fine. Be that way!'  if you address w/o saying anything
 // 'Whatever.' to anything else
 export const hey = (message) => {
-  if (message.toUpperCase()) {
+  if (message === message.toUpperCase()) {
     return 'Whoa, chill out!'
+  } 
+  else if (message.includes('?')) {
+    return 'Sure.'
   }
 };

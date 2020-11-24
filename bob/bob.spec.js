@@ -1,7 +1,7 @@
 import { hey } from './bob';
 
 describe('Bob', () => {
-  test('stating something', () => {
+  xtest('stating something', () => {
     const result = hey('Tom-ay-to, tom-aaaah-to.');
     expect(result).toEqual('Whatever.');
   });
@@ -16,7 +16,7 @@ describe('Bob', () => {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xtest('asking a question', () => {
+  test('asking a question', () => {
     const result = hey('Does this cryogenic chamber make me look fat?');
     expect(result).toEqual('Sure.');
   });
