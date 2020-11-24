@@ -10,9 +10,12 @@
 // 'Whatever.' to anything else
 
 export const hey = (message) => {
-  if (message === message.toUpperCase()) {
+  if (message === message.toUpperCase() && !message.includes('?')) {
     return 'Whoa, chill out!'
   } 
+  else if (message === message.toUpperCase() && message.includes('?')) {
+    return 'Calm down, I know what I\'m doing!' 
+  }
   else if (message.includes('?')) {
     return 'Sure.'
   }
