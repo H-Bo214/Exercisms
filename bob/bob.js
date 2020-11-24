@@ -16,7 +16,7 @@ export const hey = (message) => {
   else if (message.includes('?')) {
     return 'Sure.'
   }
-  else if (message.includes('!')) {
+  else if (!message.includes('!') || !message.includes('?')) {
     return 'Whatever.'
   }
 };

@@ -1,7 +1,7 @@
 import { hey } from './bob';
 
 describe('Bob', () => {
-  xtest('stating something', () => {
+  test('stating something', () => {
     const result = hey('Tom-ay-to, tom-aaaah-to.');
     expect(result).toEqual('Whatever.');
   });
@@ -36,7 +36,7 @@ describe('Bob', () => {
     expect(result).toEqual('Whatever.');
   });
 
-  xtest('using acronyms in regular speech', () => {
+  test('using acronyms in regular speech', () => {
     const result = hey("It's OK if you don't want to go to the DMV.");
     expect(result).toEqual('Whatever.');
   });
